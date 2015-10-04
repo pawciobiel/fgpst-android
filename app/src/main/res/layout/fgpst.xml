@@ -43,8 +43,8 @@
         android:height="60sp"
         android:onClick="onToggleClicked"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textOff="@string/button_toggle"
-        android:textOn="@string/button_toggle"
+        android:textOff="@string/button_toggle_off"
+        android:textOn="@string/button_toggle_on"
         android:textStyle="bold"
         android:width="150sp" />
 

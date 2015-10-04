@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">FreeGPSTracker</string>
 
-    <string name="button_toggle">Track!</string>
+    <string name="button_toggle_off">Start</string>
+    <string name="button_toggle_on">Stop</string>
 
     <string name="desc_logo">Logo</string>
 

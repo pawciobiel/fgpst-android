@@ -134,23 +134,6 @@ public class FgpstService extends IntentService implements LocationListener {
         sendBroadcast(intent);
     }
 
-    public static double getDoubleValue(String value, int digit){
-        if(value==null){
-            value="0";
-        }
-        double i=0;
-        try {
-            DecimalFormat digitformat = new DecimalFormat("#.######");
-            digitformat.setMaximumFractionDigits(digit);
-            return Double.valueOf(digitformat.format(Double.parseDouble(value)));
-
-        } catch (NumberFormatException numberFormatExp) {
-            return i;
-        }
-    }
-
-	/* -------------- GPS stuff -------------- */
-
     public JSONObject buildPositionMsgFromCurrLocation(){
         double lat = currentLocation.getLatitude();
         double lon = currentLocation.getLongitude();
